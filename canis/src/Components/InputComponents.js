@@ -4,12 +4,14 @@ import React from "react";
 import Zipcode from "./AllInputComponents/Zipcode";
 import DateRange from "./AllInputComponents/DateRange.js";
 import IncludeLocationless from "./AllInputComponents/IncludeLocationless.js";
+import SearchRadius from "./AllInputComponents/SearchRadius.js";
 
 function InputComponents() {
   return (
     <div>
       <DateRange />
       <Zipcode />
+      <SearchRadius />
       <IncludeLocationless />
     </div>
   );
