@@ -2,11 +2,15 @@
 //input components can be found in the InputComponents folder
 import React from "react";
 import Zipcode from "./AllInputComponents/Zipcode";
+import DateRange from "./AllInputComponents/DateRange.js";
+import IncludeLocationless from "./AllInputComponents/IncludeLocationless.js";
 
 function InputComponents() {
   return (
     <div>
+      <DateRange />
       <Zipcode />
+      <IncludeLocationless />
     </div>
   );
 }

@@ -1,15 +1,12 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 
-class Zipcode extends Component {
-  render() {
-    return (
-      <form noValidate autoComplete="off">
-        <TextField id="outlined-basic" label="Zipcode" variant="outlined" />
-      </form>
-    );
-  }
+function Zipcode() {
+  return (
+    <form noValidate autoComplete="off">
+      <TextField id="outlined-basic" label="Zipcode" variant="outlined" />
+    </form>
+  );
 }
 
 export default Zipcode;
