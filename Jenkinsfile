@@ -12,12 +12,12 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                yarn start
             }
         }
         stage('Test') {
             steps {
-                sh "chmod +x ./jenkins/scripts/test.sh"
-                sh './jenkins/scripts/test.sh'
+                node Selenium/index.js
             }
         }
     }
