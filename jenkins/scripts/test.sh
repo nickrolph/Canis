@@ -1,3 +1,4 @@
+#!/bin/bash
 #!/usr/bin/env sh
 
 echo 'This command is for a devDependency'
