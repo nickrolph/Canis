@@ -12,12 +12,13 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-                chmod +x './jenkins/scripts/test.sh'
+                
                 // yarn start
             }
         }
         stage('Test') {
             steps {
+                chmod +x './jenkins/scripts/test.sh'
                 sh './jenkins/scripts/test.sh'
             }
         }
