@@ -5,9 +5,9 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    // environment {
-    //     CI = 'true'
-    // }
+    environment {
+        CI = 'true'
+    }
     stages {
         stage('Build') {
             steps {
@@ -15,10 +15,10 @@ pipeline {
                 // yarn start
             }
         }
-        // stage('Test') {
-        //     steps {
-        //         node Selenium/index.js
-        //     }
-        // }
+        stage('Test') {
+            steps {
+                sh './jenkins/scripts/test.sh'
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 echo 'This command is for a devDependency'
 set -x
-#npm install --save-dev cross-env
+npm install --save-dev cross-env
 set +x
 
 echo 'the following "npm" command tests that our application is rendering'
