@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                chmod +x './jenkins/scripts/test.sh'
                 // yarn start
             }
         }
